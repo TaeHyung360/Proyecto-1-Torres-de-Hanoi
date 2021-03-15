@@ -9,7 +9,7 @@ namespace Torres_de_Hanoi
     //Clase pila
     class Pila
     {
-        public int Valor { get; set; }
+       
 
     }
 }
