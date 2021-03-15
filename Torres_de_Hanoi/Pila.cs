@@ -16,7 +16,7 @@ namespace Torres_de_Hanoi
 
         public int tamPila;
         
-        /* TODO: Implementar métodos */
+        /* TODO: Implementar métodos hola*/
         public Pila()
         {
             tamPila = 0;
