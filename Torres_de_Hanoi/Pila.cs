@@ -13,66 +13,62 @@ namespace Torres_de_Hanoi
 
         public int Top { get; set; }
 
-        public Disco[] Elementos { get; set; }
+        public List<Disco> Elementos { get; set; }
 
-        public int tamPila;
 
         /* TODO: Implementar métodos*/
         public Pila()
         {
-            tamPila = 0;
+            Size = 0;
 
         }
 
         public void push(Disco d)
         {
 
-            if (tamPila == 0)
+            if (Size == 0 || d.Valor < Top)
             {
-                tamPila++;
+                Size++;
 
-                Elementos[tamPila] = d;
+                Elementos[Size] = d;
+
+                Top = d.Valor;
             }
-            else
-            {
-                if (d.Valor < Elementos[tamPila].Valor)
-                {
-                    tamPila++;
-
-                    Elementos[tamPila] = d;
-
-                }
-
-                else
-                {
-                    //No puede haber un push ya que la pila de abajo es menor a la que estas intetando introducir.
-                }
-            }
-
+ 
         }
 
         public Disco pop()
         {
 
-            Disco res = Elementos[tamPila];
+            Disco res = new Disco();
 
-            tamPila--;
+            if (Size > 0)
+            {
+                res = Elementos.Last(); //Creamos un obj con el ultimo disco de la lista
+
+                Elementos.RemoveAt(Size - 1); //Eliminamos el ultimo de la lista 
+
+                Size--; //Se reduce el tamanyo
+
+                if (Size == 0)
+                {
+                    Top = 0;
+                }
+                else
+                {
+                    Top = Elementos.Last().Valor; //Asignamos a top el ultimo valor
+                }
+  
+            }
 
             return res;
+
         }
-
-        public Disco top()
-        {
-            Disco res = Elementos[tamPila];
-
-            return res;
-        }
-
 
         public bool isEmpty()
         {
 
-            if (tamPila != 0)
+            if (Size != 0)
             {
 
                 return false;
