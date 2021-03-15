@@ -19,7 +19,11 @@ namespace Torres_de_Hanoi
         /* TODO: Implementar métodos*/
         public Pila()
         {
+            Top = 0;
+
             Size = 0;
+
+            Elementos = new List<Disco>();
 
         }
 
@@ -30,7 +34,7 @@ namespace Torres_de_Hanoi
             {
                 Size++;
 
-                Elementos[Size] = d;
+                Elementos.Add(d);
 
                 Top = d.Valor;
             }

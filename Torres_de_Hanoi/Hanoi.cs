@@ -9,16 +9,16 @@ namespace Torres_de_Hanoi
     class Hanoi
     {
 
-        public void mover_disco(Pila a, Pila b)
+        public static void mover_disco(Pila a, Pila b)
         {
-            if (b.isEmpty() == true || b.top().Valor > a.top().Valor)
+            if (b.isEmpty() == true || b.Top > a.Top)
             {
 
                 Console.WriteLine("Moviendo disco de A a B");
 
                 b.push(a.pop());
             }
-            else if (a.isEmpty() == true || a.top().Valor > b.top().Valor)
+            else if (a.isEmpty() == true || a.Top > b.Top)
             {
 
                 a.push(b.pop());
@@ -29,13 +29,13 @@ namespace Torres_de_Hanoi
 
         }
 
-        public int iterativo(int n, Pila ini, Pila fin, Pila aux)
+        public static int iterativo(int n, Pila ini, Pila fin, Pila aux)
         {
             int m = 0;
 
-            if ((n % 2) == 0)
+            if ((n % 2) == 0) //Si el reesto de n  entre dos es 0 hace los pares, si no los impares
             {
-                while (fin.tamPila < 3)
+                while (fin.Size < 3)
                 {
                     mover_disco(ini, aux);
 
@@ -49,8 +49,9 @@ namespace Torres_de_Hanoi
             }
             else
             {
-                while (fin.tamPila < 3)
+                while (fin.Size < 3)
                 {
+                    
                     mover_disco(ini, fin);
 
                     mover_disco(ini, aux);
