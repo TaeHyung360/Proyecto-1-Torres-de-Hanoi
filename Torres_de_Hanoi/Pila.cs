@@ -8,8 +8,7 @@ namespace Torres_de_Hanoi
 {
     class Pila
     {
-        
-        
+        public int Valor { get; set; }
 
     }
 }
