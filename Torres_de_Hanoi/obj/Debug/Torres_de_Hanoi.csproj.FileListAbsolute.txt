@@ -1,0 +1,7 @@
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe.config
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.pdb
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csprojAssemblyReference.cache
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.CoreCompileInputs.cache
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.exe
+C:\Users\tosty\Documents\UPV\Curso20202021\Segundo cuatrimestre\Algoritmica\Practicas\Practica 1\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.pdb
