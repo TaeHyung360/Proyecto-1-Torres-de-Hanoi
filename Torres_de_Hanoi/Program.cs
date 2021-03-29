@@ -10,6 +10,7 @@ namespace Torres_de_Hanoi
     {
         static void Main(string[] args)
         {
+            //=====================================================================
 
             Pila ini = new Pila(); //Inicializamos las pilas
 
@@ -17,7 +18,9 @@ namespace Torres_de_Hanoi
 
             Pila fin = new Pila();
 
-            Console.WriteLine("Indique el número de discos que va a utilizar: ");
+            //=====================================================================
+
+            Console.WriteLine(" Indique el número de discos que va a utilizar: ");
 
             int cuantos = Convert.ToInt32(Console.ReadKey().KeyChar.ToString());
 
@@ -32,11 +35,19 @@ namespace Torres_de_Hanoi
 
             }
 
+            //Llamamos a la clase Hanoi y guardamos los movimientos
+
             int movimientos = Hanoi.iterativo(cuantos, ini, fin, aux);
 
-            Console.WriteLine("Movimientos realizados = " + movimientos);
+            int movimientosRecursivo = Hanoi.recursivo(cuantos, ini, fin, aux);
 
-            Console.WriteLine("Movimientos realizados = " + (Math.Pow(2, cuantos) - 1)); 
+            Console.WriteLine(" Movimientos realizados = " + movimientos);
+
+            Console.WriteLine(" Movimientos realizados = " + movimientosRecursivo);
+
+            //
+
+            Console.WriteLine(" Minimo numero de movimientos = " + (Math.Pow(2, cuantos) - 1)); 
 
         }
     }

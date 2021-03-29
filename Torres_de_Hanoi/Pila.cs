@@ -9,14 +9,13 @@ namespace Torres_de_Hanoi
     //Clase pila
     class Pila
     {
+        //Tamaño de la pila
         public int Size { get; set; }
-
+        //El elemento situado en la parte superi de la pila
         public int Top { get; set; }
-
+        //Lista de tipo Disco de cada elemenento de la pila
         public List<Disco> Elementos { get; set; }
 
-
-        /* TODO: Implementar métodos*/
         public Pila()
         {
             Top = 0;
@@ -29,6 +28,9 @@ namespace Torres_de_Hanoi
 
         public void push(Disco d)
         {
+
+            //Introducimos dos condiciones si tamaño es 0 o 
+            //el valor introducido es menor al valor mas alto de la pila registrado
 
             if (Size == 0 || d.Valor < Top)
             {
@@ -65,7 +67,7 @@ namespace Torres_de_Hanoi
   
             }
 
-            return res;
+            return res; //Devolvemos el elemento deseado
 
         }
 

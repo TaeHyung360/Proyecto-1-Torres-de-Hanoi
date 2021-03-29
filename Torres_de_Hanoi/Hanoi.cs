@@ -57,7 +57,7 @@ namespace Torres_de_Hanoi
 
         public static int iterativo(int n, Pila ini, Pila fin, Pila aux)
         {
-            int m = 0;
+            int m = 0; //M es igual al numero de movimientos realizados
 
             if (n % 2 != 0)
             {
@@ -109,5 +109,36 @@ namespace Torres_de_Hanoi
             }
             return m;
         }
+
+        //===========================================================================================================================
+        //Recursivo
+        //===========================================================================================================================
+
+        public static int m = 0;
+
+        public static int recursivo(int n, Pila ini, Pila fin, Pila aux)
+        {
+            //m es igual al numero de movimientos realizados
+
+            if (n == 1)
+            {
+                
+                mover_disco(ini, fin);
+                m++;
+                     
+            }
+            else
+            {
+                
+                   recursivo(n-1, ini, aux, fin);
+                   m++;
+                   mover_disco(ini, fin);
+                recursivo(n-1, aux, fin, ini);
+                
+            }
+            return m;
+        }
+
+
     }
 }
