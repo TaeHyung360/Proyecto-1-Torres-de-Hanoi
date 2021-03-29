@@ -120,7 +120,7 @@ namespace Torres_de_Hanoi
         {
             //m es igual al numero de movimientos realizados
 
-            if(n < 0){
+            if(n == 0){ 
             
                 return 0;
             
