@@ -41,11 +41,13 @@ namespace Torres_de_Hanoi
 
             int movimientosRecursivo = Hanoi.recursivo(cuantos, ini, fin, aux);
 
-            Console.WriteLine(" Movimientos realizados = " + movimientos);
+            Console.WriteLine(" Movimientos realizados iterativo = " + movimientos);
 
-            Console.WriteLine(" Movimientos realizados = " + movimientosRecursivo);
+            Console.WriteLine(" Movimientos realizados recursivo = " + movimientosRecursivo);
 
-            //
+            //==============================================================================
+            //Calculo de la formula de movimientos minimos
+            //==============================================================================
 
             Console.WriteLine(" Minimo numero de movimientos = " + (Math.Pow(2, cuantos) - 1)); 
 
