@@ -120,6 +120,12 @@ namespace Torres_de_Hanoi
         {
             //m es igual al numero de movimientos realizados
 
+            if(n < 0){
+            
+                return 0;
+            
+            }
+
             if (n == 1)
             {
                 
@@ -130,9 +136,9 @@ namespace Torres_de_Hanoi
             else
             {
                 
-                   recursivo(n-1, ini, aux, fin);
-                   m++;
-                   mover_disco(ini, fin);
+                recursivo(n-1, ini, aux, fin);
+                m++;
+                mover_disco(ini, fin);
                 recursivo(n-1, aux, fin, ini);
                 
             }
