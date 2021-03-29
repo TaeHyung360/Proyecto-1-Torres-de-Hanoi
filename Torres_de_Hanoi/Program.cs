@@ -10,15 +10,20 @@ namespace Torres_de_Hanoi
     {
         static void Main(string[] args)
         {
-            //=====================================================================
 
-            Pila ini = new Pila(); //Inicializamos las pilas
+            //==============================================================================
+            //Inicializamos las pilas
+            //==============================================================================
+
+            Pila ini = new Pila();
 
             Pila aux = new Pila();
 
             Pila fin = new Pila();
 
-            //=====================================================================
+            //==============================================================================
+            //Preguntamos al usuario
+            //==============================================================================
 
             Console.WriteLine(" Indique el número de discos que va a utilizar: ");
 
@@ -35,7 +40,9 @@ namespace Torres_de_Hanoi
 
             }
 
+            //==============================================================================
             //Llamamos a la clase Hanoi y guardamos los movimientos
+            //==============================================================================
 
             int movimientos = Hanoi.iterativo(cuantos, ini, fin, aux);
 

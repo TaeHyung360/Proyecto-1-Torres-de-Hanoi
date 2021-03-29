@@ -8,7 +8,10 @@ namespace Torres_de_Hanoi
 {
     class Disco
     {
+        //==============================================================================
         //Definimos la unica propiedad de la clase disco, es el valor del mismo
+        //==============================================================================
+   
         public int Valor { get; set; }
 
     }
