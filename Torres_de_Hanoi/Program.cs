@@ -27,7 +27,15 @@ namespace Torres_de_Hanoi
 
             Console.WriteLine(" Indique el número de discos que va a utilizar: ");
 
-            int cuantos = Convert.ToInt32(Console.ReadKey().KeyChar.ToString());
+            string key = Console.ReadLine();
+
+            int cuantos = 0;
+
+            while (!Int32.TryParse(key, out cuantos) || Int32.Parse(key) < 0)
+            {
+                Console.WriteLine("Inténtelo de nuevo");
+                key = Console.ReadLine();
+            }
 
             for (int i = cuantos; i > 0; i--)
             {
